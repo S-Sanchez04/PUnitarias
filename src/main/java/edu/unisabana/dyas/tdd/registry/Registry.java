@@ -12,7 +12,7 @@ public class Registry {
         if(!p.isAlive()){
             return RegisterResult.DEAD;
         }
-        if(p.getAge() < 1 || p.getAge() > 121){
+        if(p.getAge() < 1 ){
             return RegisterResult.INVALID_AGE;
         }
         if(p.getAge() < 18 && p.getAge() > 0){
